@@ -1,0 +1,65 @@
+{% extends "template.html" %}
+{% block content %}
+{% if session.logged_in %}
+  <form action="{{ url_for('showall') }}"  enctype="multipart/form-data">
+  </form>
+
+
+  <div class="item">
+    <div class="item-image"><img src="static/image/0.jpg" alt=""></div>
+    <div class="item-text">
+      <p><object data="static/des/0.txt" type="text/plain"></object></p>
+      <p><h4>いいね！：1000000000000</h4></p>
+      <div class="balloon2-right">
+        <p>すごい！天才！</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-image"><img src="static/image/1.jpg" alt=""></div>
+    <div class="item-text">
+      <p><object data="static/des/1.txt" type="text/plain"></object></p>
+      <h4>いいね！：2000000000000</h4>
+      <div class="balloon2-right">
+        <p>超いいね。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-image"><img src="static/image/2.jpg" alt=""></div>
+    <div class="item-text">
+      <p><object data="static/des/2.txt" type="text/plain"></object></p>
+      <h4>いいね！：3000000000000</h4>
+      <div class="balloon2-right">
+        <p>最高ですね</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-image"><img src="static/image/3.jpg" alt=""></div>
+    <div class="item-text">
+      <p><object data="static/des/3.txt" type="text/plain"></object></p>
+      <h4>いいね！：4000000000000</h4>
+      <div class="balloon2-right">
+        <p>毎日見るのが楽しみです！</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="item-image"><img src="static/image/4.jpg" alt=""></div>
+    <div class="item-text">
+      <p><object data="static/des/4.txt" type="text/plain"></object></p>
+      <h4>いいね！：5000000000000</h4>
+      <div class="balloon2-right">
+        <p>明日も見せてくださいね！</p>
+      </div>
+    </div>
+  </div>
+
+
+{% endif %}
+{% endblock %}
